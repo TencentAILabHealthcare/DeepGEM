@@ -123,7 +123,7 @@ def evaluate(
     # pred_label = np.argmax(pred, axis=1)
     optimal_threshold_test = get_optimized_point_maxSensitivitySpecificity(list(label), list(pred[:, 1]))
     pred_label = get_prediction_from_probability(list(pred[:, 1]), optimal_threshold_test)
-    acc_score = metrics.accuracy_score(label, pred_label)
+
     if num_of_class == 2:
         f1_score = metrics.f1_score(label, pred_label)
         recall_score = metrics.recall_score(label, pred_label)
@@ -142,7 +142,7 @@ def evaluate(
     logger.info("Performance:")
 
     logger.info(
-        f"{display_header} AUC: {auc:.4f} Acc: {acc_score:.4f}"
+        f"{display_header} AUC: {auc:.4f}"
     )
 
     if kappa_flag:
@@ -156,7 +156,7 @@ def evaluate(
     # logger.info("Averaged stats:", metric_logger)
     stats = {k: meter.global_avg for k, meter in metric_logger.meters.items()}
     stats["auc"] = auc
-    stats["acc"] = acc_score
+
     if kappa_flag:
         stats["kappa"] = kappa_res
 

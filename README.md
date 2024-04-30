@@ -99,10 +99,10 @@ This code uses the centralized configs. Before using this code, a config file ne
 ## For docker users
 ### 1-Pull docker images from docker-hub.（optional）
 ```
-docker pull soonera/deepgem:latest
+docker pull skirophorion/deepgem:latest
 ```
 ### 2-Use docker file `deepgem.tar`.（optional)
-The docker image file can be found at [WeDrive](https://drive.weixin.qq.com/s?k=AJEAIQdfAAoor72Uij)
+The docker image file can be found at [WeDrive](https://drive.weixin.qq.com/s?k=AJEAIQdfAAo2MwMVlt)
 + Add docker image by loading the docker file:
 ```
 docker load < deepgem.tar
@@ -110,7 +110,7 @@ docker load < deepgem.tar
 
 ### 3-Start your docker and run examples:
 ```
-docker run --name deepgem --gpus all -it --rm  soonera/deepgem:latest /bin/bash
+docker run --name deepgem --gpus all -it --rm  skirophorion/deepgem:latest /bin/bash
 
 ```
 + If there are multiple GPUs in your device and you just want to use only one GPU:
@@ -236,7 +236,7 @@ conda deactivate
 
 Example data are given in `./sample_data`.
 
-The DeepGEM source code, the training and test data, as well as the trained DeepGEM models, are also available on [Zenodo](https://zenodo.org/record/8286746), or [WeDrive](https://drive.weixin.qq.com/s?k=AJEAIQdfAAo10VtGUn).
+The DeepGEM source code, the training and test data, as well as the trained DeepGEM models, are also available on [Zenodo](https://zenodo.org/record/11056852), or [WeDrive](https://drive.weixin.qq.com/s?k=AJEAIQdfAAo2MwMVlt).
 
 # Disclaimer
 This tool is for research purpose and not approved for clinical use.
