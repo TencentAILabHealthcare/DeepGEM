@@ -102,7 +102,7 @@ This code uses the centralized configs. Before using this code, a config file ne
 docker pull skirophorion/deepgem:latest
 ```
 ### 2-Use docker file `deepgem.tar`.（optional)
-The docker image file can be found at [WeDrive](https://drive.weixin.qq.com/s?k=AJEAIQdfAAo2MwMVlt)
+The docker image file can be found at [WeDrive](https://drive.weixin.qq.com/s?k=AJEAIQdfAAomZ0nt60)
 + Add docker image by loading the docker file:
 ```
 docker load < deepgem.tar
@@ -236,7 +236,7 @@ conda deactivate
 
 Example data are given in `./sample_data`.
 
-The DeepGEM source code, as well as the trained DeepGEM models, are also available on [Zenodo](https://zenodo.org/record/11056852).
+The DeepGEM source code, as well as the trained DeepGEM models, are also available on [Zenodo](https://doi.org/10.5281/zenodo.13917850).
 
 # Disclaimer
 This tool is for research purpose and not approved for clinical use.
